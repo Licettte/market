@@ -1,8 +1,8 @@
 import React, {useContext} from 'react';
 import {BasketContext} from "../../../context/context";
-import {Span, WrapperModal} from "./ModaleStyle";
+import {Span, WrapperModal} from "./modalAddItem.Style";
 
-export const Modal = () => {
+export const ModalAddItem = () => {
     const {modalActive, currentHeadphones} = useContext(BasketContext)
 
     return (

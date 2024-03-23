@@ -1,13 +1,12 @@
 import React, {useState} from 'react';
 import {Flex} from "../../styles";
 import {useNavigate} from "react-router-dom";
-import information from '../../svg/ok.svg'
 import {useForm} from "react-hook-form";
 import {
     CartInfo,
     CartNumber,
     Container,
-    CVC, ImgCredit, ImgMir,
+    CVC, ImgCredit, ImgMir, ImgOk,
     Month,
     Paid,
     Pay,
@@ -23,6 +22,7 @@ export const Payment = () => {
     const [cardNumber, setCardNumber] = useState("");
     const [date, setDate] = useState("");
     const [cvc, setCvc] = useState("");
+
     const {
         register,
         formState: {
@@ -49,7 +49,7 @@ export const Payment = () => {
             <Container $justify='center' $direction='column' $align='center'>
                 {isPayed ?
                     <Paid $align='center' $padding='10px' $justify='center' $direction='column'>
-                        <img src={information} alt="information"/>
+                        <ImgOk/>
                         <Flex $margin='15px'>Заказ оплачен</Flex>
                     </Paid>
                     :
@@ -73,7 +73,8 @@ export const Payment = () => {
                                                 pattern: {
                                                     value: regexNumber,
                                                     message: "допустимы только цифры "
-                                                }, minLength: {
+                                                },
+                                                minLength: {
                                                     value: 16,
                                                     message: 'минимум 16 цифр'
                                                 },

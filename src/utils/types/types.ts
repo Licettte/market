@@ -1,4 +1,5 @@
-import {ReactNode} from "react";
+import React, {Dispatch, ReactNode, SetStateAction} from "react";
+import {ModuleCardType} from "../../components/modal/modalInfoItem/ModalInfoItem";
 
 export type BasketCardType = {
     img: string;
@@ -17,7 +18,10 @@ export type MainCardType = {
     discount: number;
     rating: number;
     id: number;
-    quantity: number
+    quantity: number;
+    setOpenModal: React.Dispatch<React.SetStateAction<any>>;
+    openModal :{isOpened:boolean,
+    card:ModuleCardType}
 }
 
 export type BasketContextType = {

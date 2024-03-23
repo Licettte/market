@@ -1,7 +1,8 @@
-import styled from "styled-components";
+import styled, {css, keyframes} from "styled-components";
 import {FlexStyle, FONT_MEDIUM_15, FONT_SEMI_BOLD_15, LIGHT_COLOR} from "../../styles";
 import {ReactComponent as world} from '../../svg/world.svg';
 import {ReactComponent as mir} from '../../svg/mir.svg';
+import {ReactComponent as ok} from '../../svg/ok.svg';
 export const Container = styled(FlexStyle)`
     ${FONT_SEMI_BOLD_15};
     font-family: 'Consolas', monospace;
@@ -122,3 +123,21 @@ export const ImgMir = styled(mir)`
     right: 160px
 `;
 
+const openKeyframe = keyframes`
+    0%{  opacity: 0;
+        transform:  translateY(0px)
+    }  
+  100% {
+    transform: translateY(0px);
+      opacity: 100%;
+  }
+`;
+const openAnimation = css`
+  animation: 0.5s ease-in-out ${openKeyframe} forwards;
+`;
+export const ImgOk = styled(ok)`  
+    width: 100%;
+    z-index: 1;
+    transform: ${props => props.$active ? 'scale(1)': 'scale(0)'};
+   ${openAnimation}: 'scale(0)'}  
+`;

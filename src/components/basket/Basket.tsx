@@ -12,20 +12,22 @@ export const Basket = () => {
     const totalPrice = headphones.reduce((accumulator: number, currentValue: BasketCardType) => accumulator + (currentValue.price * currentValue.quantity), 0)
 
     return (
-        <div>
-            <h2> Корзина </h2>
-            <Flex $justify='space-between'>
-                <CardBasketContainer $direction="column">
-                    <BasketCard/>
-                </CardBasketContainer>
-                <TotalContainer $direction="column">
-                    <Flex $justify='space-between' $padding="22px 18px 0 22px">
-                        <Total>ИТОГО</Total>
-                        <TotalPriceItem> ₽ {totalPrice} </TotalPriceItem>
-                    </Flex>
-                    <LinkToPayment to={PageRoutes.PAYMENT}>Перейти к оформлению</LinkToPayment>
-                </TotalContainer>
-            </Flex>
+        <div> {headphones.length > 0 ?
+            <>
+                <h2> Корзина </h2>
+                <Flex $justify='space-between'>
+                    <CardBasketContainer $direction="column">
+                        <BasketCard/>
+                    </CardBasketContainer>
+                    <TotalContainer $direction="column">
+                        <Flex $justify='space-between' $padding="22px 18px 0 22px">
+                            <Total>ИТОГО</Total>
+                            <TotalPriceItem> ₽ {totalPrice} </TotalPriceItem>
+                        </Flex> <LinkToPayment to={PageRoutes.PAYMENT}>Перейти к оформлению</LinkToPayment>
+                    </TotalContainer>
+                </Flex>
+            </>
+            : <h3>нет добавлееных товаров</h3>}
         </div>
     );
 

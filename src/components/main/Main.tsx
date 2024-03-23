@@ -1,8 +1,9 @@
 import {MainCard} from "./MainCard";
 import React, {useState, useEffect} from 'react';
 import {ThreeColumn} from "../../styles";
-import {MainCardType, URL_GET_ITEM }from "../../utils";
-import {Modal} from "../layouts/modal/Modal";
+import {MainCardType, URL_GET_ITEM} from "../../utils";
+import {ModalAddItem} from "../modal/modalAddItem/ModalAddItem";
+import {ModalInfoItem} from "../modal/modalInfoItem/ModalInfoItem";
 
 
 export const Main = () => {
@@ -11,7 +12,18 @@ export const Main = () => {
     const [wiredHeadphones, setWiredHeadphones] = useState<MainCardType[]>([])
     const [wirelessHeadphones, setWirelessHeadphones] = useState<MainCardType[]>([])
     const [isLoaded, setIsLoaded] = useState<boolean>(false)
-
+    const [openModal, setOpenModal] = useState({
+        isOpened: false,
+        card: {
+            img: '',
+            title: '',
+            price: 0,
+            discount: 0,
+            rating: 0,
+            id: 0,
+            quantity: 0,
+        }
+    })
 
     useEffect(
         () => {
@@ -32,7 +44,7 @@ export const Main = () => {
 
 
     const getCards = (headphones: MainCardType[]) => {
-        return (headphones.map(card => <MainCard key={card.id} {...card} />))
+        return (headphones.map(card => <MainCard key={card.id} {...card} setOpenModal={setOpenModal}/>))
     }
     console.log(wiredHeadphones, "wiredHeadphones")
     return (
@@ -50,7 +62,8 @@ export const Main = () => {
                     </ThreeColumn>
                 </>
             }
-            <Modal />
+            {openModal.isOpened ? <ModalInfoItem setOpenModal={setOpenModal} openModal={openModal}/> : null}
+            <ModalAddItem/>
         </>
     )
 }
