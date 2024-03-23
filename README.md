@@ -1,8 +1,8 @@
 $\Large\text{\ \color{lightblue}\ Market}$
 $\text{\ \color{lightblue}\  Deploy: \}$ [shop.net](https://licettte.github.io/shop/#/) 
 ____
-<img src="https://github.com/Licettte/market/assets/80988747/346efa61-0b77-43a7-a5d7-7f8e5ce002b2" width="491" />
-<img src="https://github.com/Licettte/market/assets/80988747/627e7136-b77e-4648-91a6-cd8be3e9f184" width="500" />
+<h3><img src="https://github.com/Licettte/market/assets/80988747/346efa61-0b77-43a7-a5d7-7f8e5ce002b2" width="491" />
+<img src="https://github.com/Licettte/market/assets/80988747/627e7136-b77e-4648-91a6-cd8be3e9f184" width="500" /></h3>
 
 $\text{\ \color{lightblue}\   Технологии:\}$  
 
