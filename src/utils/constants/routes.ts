@@ -1,5 +1,5 @@
 export enum PageRoutes {
-    LAYOUT = '/',
+    LAYOUT = '/market',
     BASKET = 'basket',
     PAYMENT = '/payment',
     FAVORITE = '/favorite'
