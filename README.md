@@ -1,6 +1,5 @@
 $\Large\text{\ \color{lightblue}\ Market}$
 ____
-$\text{\ \color{lightblue}\  Deploy: \}$ [shop.net](https://licettte.github.io/shop/#/) 
 $\text{\ \color{lightblue}\  Deploy: \}$ [shop.net](https://licettte.github.io/market/#/)  
 ____
 <img  align="right" src="https://github.com/Licettte/market/assets/80988747/346efa61-0b77-43a7-a5d7-7f8e5ce002b2" width="450" />
