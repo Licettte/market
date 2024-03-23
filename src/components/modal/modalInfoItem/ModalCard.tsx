@@ -3,7 +3,6 @@ import {ModuleCardType} from "./ModalInfoItem";
 import {
     Img,
     Span,
-    SpanDiscount,
     StarSVG,
 } from "../../main/MainCardStyle";
 import {BasketContext} from "../../../context/context";
@@ -13,7 +12,7 @@ import {ModalButton, ModalWrapper} from "./modalInfoItemStyle";
 
 export const ModalCard = (card: ModuleCardType) => {
     const {addItem} = useContext(BasketContext)
-    const {img, title, price, discount, rating,} = card
+    const {img, title, price, rating,} = card
     return (
         <Flex>
             <ModalWrapper>
@@ -23,8 +22,6 @@ export const ModalCard = (card: ModuleCardType) => {
             <Flex $direction='column' $margin='24px 78px' $justify='space-between'>
                 <Span $type={"dark2XL"}> {title} </Span>
                 <Span $type={"brightPrimary"}> {price}₽ </Span>
-                {discount ? <SpanDiscount> {discount}₽</SpanDiscount> : ''}
-
                 <div>
                     <StarSVG/>
                     <Span $type={"darkM"}> {rating}</Span>
@@ -42,7 +39,6 @@ export const ModalCard = (card: ModuleCardType) => {
                     <ModalButton onClick={() => addItem(card)}> Купить</ModalButton>
                 </Flex>
             </Flex>
-
         </Flex>
     );
 };

@@ -1,4 +1,4 @@
-import {Route, useLocation} from 'react-router-dom';
+import {useLocation} from 'react-router-dom';
 import {
     Div,
     FooterFlex,
@@ -7,7 +7,6 @@ import {
     Logo,
     Social,
     Span,
-    SVGLink,
     TelegramSVG,
     VKSVG,
     WhatsAppSVG
@@ -40,11 +39,11 @@ export const Footer = () => {
             </Div>
 
             <Social>
-                <a href="https://vk.com/neoflex_ru"  target="_blank"
+                <a href="https://vk.com/neoflex_ru" target="_blank"
                    rel="noopener noreferrer">
                     <VKSVG/>
                 </a>
-                <a href="https://web.telegram.org/a/"  target="_blank"
+                <a href="https://web.telegram.org/a/" target="_blank"
                    rel="noopener noreferrer">
                     <TelegramSVG/>
                 </a>

@@ -2,9 +2,7 @@ import {MainCard} from "./MainCard";
 import React, {useState, useEffect} from 'react';
 import {ThreeColumn} from "../../styles";
 import {MainCardType, URL_GET_ITEM} from "../../utils";
-import {ModalAddItem} from "../modal/modalAddItem/ModalAddItem";
-import {ModalInfoItem} from "../modal/modalInfoItem/ModalInfoItem";
-
+import {ModalAddItem, ModalInfoItem} from "../modal";
 
 export const Main = () => {
 

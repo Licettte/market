@@ -1,9 +1,8 @@
-import React, {useContext, useState} from "react";
+import React, {useContext} from "react";
 import {BasketContext} from "../../context/context";
-import {MainCardType} from "../../utils/types/types";
+import {MainCardType} from "../../utils";
 import {Button, ButtonSVG, Discount, Div, Img, InfoSVG, Span, SpanDiscount, StarSVG, Wrapper} from "./MainCardStyle";
-import {SVGLink} from "../layouts/header/HeaderStyle";
-import {ModalInfoItem} from "../modal/modalInfoItem/ModalInfoItem";
+
 
 export const MainCard = (card: MainCardType) => {
 

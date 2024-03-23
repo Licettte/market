@@ -10,7 +10,6 @@ import {
    PRIMARY_COLOR, FONT_SEMI_BOLD_17, mobile
 } from "../../styles";
 import {SVGLink} from "../layouts/header/HeaderStyle";
-import {Link} from "react-router-dom";
 
 export const Wrapper = styled.div`
    @media (max-width: ${mobile}) {      

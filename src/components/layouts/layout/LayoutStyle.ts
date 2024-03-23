@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const Top = styled.header`
     min-height: 50px;   
 `;

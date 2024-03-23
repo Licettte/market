@@ -12,8 +12,6 @@ import {
     FlexStyle,
     mobile
 } from "../../../styles";
-
-
 export const HeaderContainer = styled(FlexStyle)`
     @media (max-width: ${mobile}) {
         padding: 30px 0 0;

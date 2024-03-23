@@ -7,7 +7,7 @@ import {LinkToPayment, Total, TotalContainer, TotalPriceItem, CardBasketContaine
 
 
 export const Basket = () => {
-    const {addItem, headphones} = useContext(BasketContext)
+    const {headphones} = useContext(BasketContext)
 
     const totalPrice = headphones.reduce((accumulator: number, currentValue: BasketCardType) => accumulator + (currentValue.price * currentValue.quantity), 0)
 
@@ -30,5 +30,4 @@ export const Basket = () => {
             : <h3>нет добавлееных товаров</h3>}
         </div>
     );
-
 }

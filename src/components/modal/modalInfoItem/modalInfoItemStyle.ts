@@ -1,7 +1,6 @@
 import styled, {css, keyframes} from "styled-components";
-import {BRIGHT_PRIMARY_COLOR, FlexStyle, FONT_SEMI_BOLD_17, LIGHT_COLOR} from "../../../styles";
-import {DARK_L_COLOR, DARK_M_COLOR} from "../../../styles";
-import {FONT_SEMI_BOLD_13} from "../../../styles";
+import {BRIGHT_PRIMARY_COLOR,  FONT_SEMI_BOLD_17, LIGHT_COLOR} from "../../../styles";
+
 
 const openKeyframe = keyframes`
     0%{  opacity: 0;

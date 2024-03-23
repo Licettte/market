@@ -1,7 +1,6 @@
 import React, {Dispatch, SetStateAction} from 'react';
 import styled from "styled-components";
-import {DARK_L_COLOR, FlexStyle, FONT_SEMI_BOLD_13, LIGHT_COLOR} from "../../../styles";
-import {MainCard} from "../../main/MainCard";
+import { FlexStyle,  LIGHT_COLOR} from "../../../styles";
 import {ModalCard} from "./ModalCard";
 
 export type ModuleCardType = {

@@ -3,7 +3,7 @@ import {Outlet} from "react-router-dom";
 import {Header} from "../header/Header";
 import {Footer} from "../footer/Footer";
 import {Bottom, Content, Top} from "./LayoutStyle";
-import {Container} from "../../../styles/Wrapper";
+import {Container} from "../../../styles";
 
 export const Layout = () => {
     return (

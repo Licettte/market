@@ -1,6 +1,5 @@
-import React, {createContext, Dispatch, SetStateAction, useEffect, useState} from 'react';
+import React, {createContext, useEffect, useState} from 'react';
 import {BasketContextType, Children, MainCardType} from "../utils";
-
 
 const defaultState = {
     headphones: [],

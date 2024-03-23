@@ -3,7 +3,6 @@ import {BasketContext} from "../../../context/context";
 import {SVGLink, BasketSVG, Counter, LogoLink, HeartSVG, HeaderContainer} from "./HeaderStyle";
 import {PageRoutes} from "../../../utils";
 import {useLocation} from "react-router-dom";
-import {Span} from "../footer/FooterStyle";
 
 export const Header = () => {
     const path = useLocation();
