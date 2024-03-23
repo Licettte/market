@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/market/static/js/main.23fe5e38.js",
-    "static/js/592.07e1e3b8.chunk.js": "/market/static/js/592.07e1e3b8.chunk.js",
-    "static/media/world.svg": "/market/static/media/world.28344369ff9adfb75fb96dc3750d0804.svg",
-    "static/media/vk.svg": "/market/static/media/vk.498d1a0257bce7d7cc2f43da2d123410.svg",
-    "static/media/whatsapp.svg": "/market/static/media/whatsapp.0e1c5667a50834fbfb58f0e9ad964805.svg",
-    "static/media/mir.svg": "/market/static/media/mir.446f4e30d9bd2b71af587393b151e152.svg",
-    "static/media/basket.svg": "/market/static/media/basket.a11a5eb5d084928cb3013c0a1f7806b4.svg",
-    "static/media/language.svg": "/market/static/media/language.797e781eca4339c28cabcdd5b54c29bb.svg",
-    "static/media/telegram.svg": "/market/static/media/telegram.a4692612114bf6d6e5cc4fa06ea4633d.svg",
-    "static/media/info.svg": "/market/static/media/info.9e14c737a118ad0b23f5481de2a660b2.svg",
-    "static/media/delete.svg": "/market/static/media/delete.933d06e4413eb2374bcb7ca489a07d69.svg",
-    "static/media/heart.svg": "/market/static/media/heart.47e90f2bcf9ce4253fc850e783b9f19b.svg",
-    "index.html": "/market/index.html",
-    "static/media/ok.svg": "/market/static/media/ok.9d9bbb22e3a3ab765504a3c595ee5d65.svg",
-    "static/media/star.svg": "/market/static/media/star.9dbabe96b0b49e50fcd3d0d3e344f8c4.svg",
-    "main.23fe5e38.js.map": "/market/static/js/main.23fe5e38.js.map",
-    "592.07e1e3b8.chunk.js.map": "/market/static/js/592.07e1e3b8.chunk.js.map"
+    "main.js": "/static/js/main.27b5cfef.js",
+    "static/js/592.07e1e3b8.chunk.js": "/static/js/592.07e1e3b8.chunk.js",
+    "static/media/world.svg": "/static/media/world.28344369ff9adfb75fb96dc3750d0804.svg",
+    "static/media/vk.svg": "/static/media/vk.498d1a0257bce7d7cc2f43da2d123410.svg",
+    "static/media/whatsapp.svg": "/static/media/whatsapp.0e1c5667a50834fbfb58f0e9ad964805.svg",
+    "static/media/mir.svg": "/static/media/mir.446f4e30d9bd2b71af587393b151e152.svg",
+    "static/media/basket.svg": "/static/media/basket.a11a5eb5d084928cb3013c0a1f7806b4.svg",
+    "static/media/language.svg": "/static/media/language.797e781eca4339c28cabcdd5b54c29bb.svg",
+    "static/media/telegram.svg": "/static/media/telegram.a4692612114bf6d6e5cc4fa06ea4633d.svg",
+    "static/media/info.svg": "/static/media/info.9e14c737a118ad0b23f5481de2a660b2.svg",
+    "static/media/delete.svg": "/static/media/delete.933d06e4413eb2374bcb7ca489a07d69.svg",
+    "static/media/heart.svg": "/static/media/heart.47e90f2bcf9ce4253fc850e783b9f19b.svg",
+    "index.html": "/index.html",
+    "static/media/ok.svg": "/static/media/ok.9d9bbb22e3a3ab765504a3c595ee5d65.svg",
+    "static/media/star.svg": "/static/media/star.9dbabe96b0b49e50fcd3d0d3e344f8c4.svg",
+    "main.27b5cfef.js.map": "/static/js/main.27b5cfef.js.map",
+    "592.07e1e3b8.chunk.js.map": "/static/js/592.07e1e3b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.23fe5e38.js"
+    "static/js/main.27b5cfef.js"
   ]
 }
