@@ -1,4 +1,4 @@
-$\Large\text{\ \color{lightblue}\ [Market](https://licettte.github.io)}$
+$\Large\text{\ \color{lightblue}\ Market}$
 ____
 $\text{\ \color{lightblue}\  Deploy: \}$ [market.net](https://licettte.github.io/market/#/) 
 ____
