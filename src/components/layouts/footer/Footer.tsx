@@ -13,6 +13,7 @@ import {
 } from "./FooterStyle";
 import {language} from "../../../svg";
 import React from "react";
+import {PageRoutes} from "../../../utils";
 
 export const Footer = () => {
     const path = useLocation();
@@ -32,7 +33,7 @@ export const Footer = () => {
                 <h6>Условия сервиса</h6>
                 <Language>
                     <Img $type="language" src={language} alt="language"/>
-                    {path.pathname === '/basket' ? <Span> Kaз</Span> : null}
+                    {path.pathname === PageRoutes.BASKET ? <Span> Kaз</Span> : null}
                     <Span $selected={true}> Рус</Span>
                     <Span> Eng</Span>
                 </Language>
