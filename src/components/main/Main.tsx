@@ -6,11 +6,10 @@ import {ModalAddItem, ModalInfoItem} from "../modal";
 
 export const Main = () => {
 
-
     const [wiredHeadphones, setWiredHeadphones] = useState<MainCardType[]>([])
     const [wirelessHeadphones, setWirelessHeadphones] = useState<MainCardType[]>([])
     const [isLoaded, setIsLoaded] = useState<boolean>(false)
-    const [openModal, setOpenModal] = useState({
+    const [openInfoModal, setOpenInfoModal] = useState({
         isOpened: false,
         card: {
             img: '',
@@ -20,6 +19,7 @@ export const Main = () => {
             rating: 0,
             id: 0,
             quantity: 0,
+            setOpenInfoModal: null
         }
     })
 
@@ -42,7 +42,7 @@ export const Main = () => {
 
 
     const getCards = (headphones: MainCardType[]) => {
-        return (headphones.map(card => <MainCard key={card.id} {...card} setOpenModal={setOpenModal}/>))
+        return (headphones.map(card => <MainCard key={card.id} {...card} setOpenModal={setOpenInfoModal}/>))
     }
     console.log(wiredHeadphones, "wiredHeadphones")
     return (
@@ -60,7 +60,8 @@ export const Main = () => {
                     </ThreeColumn>
                 </>
             }
-            {openModal.isOpened ? <ModalInfoItem setOpenModal={setOpenModal} openModal={openModal}/> : null}
+            {openInfoModal.isOpened ?
+                <ModalInfoItem setOpenInfoModal={setOpenInfoModal} openInfoModal={openInfoModal}/> : null}
             <ModalAddItem/>
         </>
     )

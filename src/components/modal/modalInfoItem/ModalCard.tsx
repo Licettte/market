@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {ModuleCardType} from "./ModalInfoItem";
+
 import {
     Img,
     Span,
@@ -8,11 +8,17 @@ import {
 import {BasketContext} from "../../../context/context";
 import {Flex} from "../../../styles";
 import {ModalButton, ModalWrapper} from "./modalInfoItemStyle";
+import {ModuleCardType} from "../../../utils";
 
 
-export const ModalCard = (card: ModuleCardType) => {
+export const ModalCard = (card: ModuleCardType,) => {
     const {addItem} = useContext(BasketContext)
-    const {img, title, price, rating,} = card
+    const {img, title, price, rating, setOpenInfoModal} = card
+
+    const addItemFromModal=(card:ModuleCardType )=>{
+        addItem(card)
+        setOpenInfoModal(false)
+    }
     return (
         <Flex>
             <ModalWrapper>
@@ -36,7 +42,7 @@ export const ModalCard = (card: ModuleCardType) => {
                 <br/>
                 Благодаря чипу H1 могут работать в режиме телефонного разговора до 3 часов без подзарядки.
                 <Flex>
-                    <ModalButton onClick={() => addItem(card)}> Купить</ModalButton>
+                    <ModalButton onClick={() => addItemFromModal(card)}> Купить</ModalButton>
                 </Flex>
             </Flex>
         </Flex>

@@ -1,5 +1,5 @@
 import styled, {css, keyframes} from "styled-components";
-import {BRIGHT_PRIMARY_COLOR,  FONT_SEMI_BOLD_17, LIGHT_COLOR} from "../../../styles";
+import {BRIGHT_PRIMARY_COLOR, FlexStyle, FONT_SEMI_BOLD_17, LIGHT_COLOR} from "../../../styles";
 
 
 const openKeyframe = keyframes`
@@ -35,4 +35,26 @@ export const ModalButton = styled.button`
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     ${FONT_SEMI_BOLD_17};
     color: ${LIGHT_COLOR};
+`;
+export const ModalContainer = styled(FlexStyle)`
+    background: rgba(0, 0, 0, 0.48);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    border: 0.2rem solid #1C1C27;
+    font-size: 1.3em;
+    font-weight: 600;
+    top: 0;
+    left: 0;
+    pointer-events: all;
+    cursor: pointer;
+`;
+
+export const ModalContent = styled(FlexStyle)`
+    padding: 28px;
+    border-radius: 80px;
+    background-color: ${LIGHT_COLOR};
+    height: 475px;
+    width: 950px;
+    cursor: default;   
 `;

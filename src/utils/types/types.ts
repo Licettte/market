@@ -1,5 +1,4 @@
 import React, {Dispatch, ReactNode, SetStateAction} from "react";
-import {ModuleCardType} from "../../components/modal/modalInfoItem/ModalInfoItem";
 
 export type BasketCardType = {
     img: string;
@@ -20,21 +19,23 @@ export type MainCardType = {
     id: number;
     quantity: number;
     setOpenModal: React.Dispatch<React.SetStateAction<any>>;
-    openModal :{isOpened:boolean,
-    card:ModuleCardType}
+    openModal: {
+        isOpened: boolean,
+        card: ModuleCardType
+    }
 }
 
 export type BasketContextType = {
     headphones: any[];
     modalActive: boolean;
-    currentHeadphones:any;
+    currentHeadphones: any;
     addItem: (item: any) => void;
     removeItem: (id: number) => void;
     incrementItem: (id: number) => void,
     decrementItem: (id: number) => void,
 }
 
-export type BasketItem ={
+export type BasketItem = {
     img: string;
     title: string;
     price: number;
@@ -47,7 +48,7 @@ export type Children = {
     children: ReactNode
 }
 
-export type FlexType ={
+export type FlexType = {
     $direction?: string,
     $align?: string,
     $justify?: string,
@@ -55,11 +56,29 @@ export type FlexType ={
     $padding?: string
 }
 
-export type FlexChildren ={
+export type FlexChildren = {
     children: ReactNode,
     $direction?: string,
     $align?: string,
     $justify?: string,
     $margin?: string
     $padding?: string
+}
+export type ModuleCardType = {
+    img: string;
+    title: string;
+    price: number;
+    discount: number;
+    rating: number;
+    id: number;
+    quantity: number;
+    setOpenInfoModal: any
+}
+
+export type ModalInfoType = {
+    setOpenInfoModal: Dispatch<SetStateAction<any>>;
+    openInfoModal: {
+        isOpened: boolean,
+        card: ModuleCardType
+    }
 }
