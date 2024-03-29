@@ -23,5 +23,5 @@ $\text{\ \color{lightblue}\  Для запуска:\}$
 ```
 
 ____
-![image](https://github.com/Licettte/market/assets/80988747/6a5c0198-c984-4817-baeb-307030d36ed6)
-![image](https://github.com/Licettte/market/assets/80988747/35e349aa-7f12-4b3e-b4d2-3363aa9ba108)
+
+![www](https://github.com/Licettte/market/assets/80988747/3fdd2ce8-2490-4808-b3f0-a6074e7c07eb)
